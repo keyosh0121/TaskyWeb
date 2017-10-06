@@ -1,0 +1,197 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html, body {
+  width:100%;
+  height:100%;
+  padding:0;
+  margin:0;
+  overflow:hidden;
+}
+
+section {
+  float:left;
+  display:block;
+  height:100%;
+  width:device-width;
+  padding:0;
+  margin:0;
+  background-size: cover;
+}
+
+#section-section1 {
+  background-image: url('Taskyweb1.jpg');
+}
+#section-section2 {
+  background-image: url('Taskyweb2.jpg');
+}
+#section-section3 {
+  background-image: url('Taskyweb3.jpg');
+}
+#section-section4 {
+  background:#c0392b;
+}
+
+.horizon-prev, .horizon-next {
+position: fixed;
+top: 50%;
+margin-top: -24px;
+z-index: 9999;
+}
+.horizon-prev {
+left: 20px;
+}
+.horizon-next {
+right: 20px;
+}
+.next-2{
+  position: relative;
+  top:0;
+  margin:0;
+  z-index: 1;
+}
+.section-container{
+  margin:100px;
+  color:white;
+  font-family: "Avenir";
+}
+#section1-title{
+  font-size: 85px;
+  letter-spacing: 15px;
+  font-weight: lighter;
+}
+#section1-description{
+  font-size: 20px;
+}
+.text-hover{
+  opacity: 0.6;
+}
+.text-hover:hover{
+  opacity: 1;
+  transition: 300ms ease;
+}
+.solo-title{
+  font-size: 60px;
+}
+.solo-description a{
+  text-align: center;
+  display: inline-block;
+  color:white;
+  background-color: #11F;
+  padding:13px;
+  width:140px;
+  height:45px;
+  position: relative;
+}
+.solo-description a:active{
+  top:2px;
+}
+.solo-description span{
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+.yoyaku-btn, .yoyaku-btn input{
+  background-color: salmon;
+  width: 200px;
+  margin:30px 0;
+  padding:10px 20px;
+  opacity: 0.6;
+  position:relative;
+  text-align: center;
+}
+.yoyaku-btn:hover{
+  opacity: 1;
+  transition: 300ms ease;
+}
+.yoyaku-btn:active{
+  top:2px;
+  transition: 300ms ease;
+}
+.yoyaku-form{
+  width: 70%;
+  margin: auto;
+  padding-top:40px;
+  padding-bottom: 10px;
+  background-color: rgba(255,255,255,0.2);
+}
+.form-content,.form-input input, select{
+  display: block;
+  width:90%;
+  margin: auto;
+}
+.form-title{
+  font-size:20px;
+  font-weight: lighter;
+  text-align: center;
+}
+.form-content{
+  font-size: 13px;
+  color:gray;
+  border-bottom:solid 1px black;
+}
+.form-input input, select{
+  height:32px;
+  margin-top:5px;
+  background-color: rgba(255,255,255,0.5);
+  border:none;
+  border-radius: 0;
+}
+.yoyaku-btn2{
+  display: block;
+  font-size: 13px;
+  margin: 20px auto;
+}
+.yoyaku-caution{
+  font-size:12px;
+  padding:20px;
+  margin:20px;
+  background-color: rgba(255,255,255,0.2);
+}
+.caution {
+  font-size: 12px;
+  color: darkred;
+}
+/* Smartphone*/
+@media only screen and (min-device-width: 200px) and (max-device-width: 700px){
+    .section-container{
+      margin:30px 10px
+    }
+    #section1-title{
+      font-size: 60px;
+      letter-spacing:5px;
+    }
+    #section-section1{
+      background-position: center;
+    }
+    .solo-before{
+      text-align: center;
+    }
+    .solo-title {
+      font-size:55px;
+      text-align: center;
+    }
+    .solo-description{
+      text-align: center;
+    }
+    .yoyakubtn1{
+      margin:20px auto;
+    }
+    .yoyaku-form{
+      margin:10px 5px;
+      width:98%;
+      padding:5px;
+    }
+    .yoyaku-caution{
+      font-size: 6px;
+    }
+    .form-title{
+      font-size:12px;
+    }
+    .form-content{
+      font-size:10px;
+    }
+    .yoyaku-btn2{
+      margin:5px auto;
+    }
+  }

@@ -1,0 +1,64 @@
+<div class="horizon-prev"><img src="assets/l-arrow.png"></div>
+<div class="horizon-next"><img src="assets/r-arrow.png"></div>
+<div class="mordal"></div>
+<section data-role="section" id="section-section1">
+  <div class="section-container">
+    <div id="section1-title" class="text-hover">Tasky5</div>
+    <div id="section1-description" class="text-hover">from Street Corner Symphony, A capella Club in Waseda University</div>
+  </div>
+</section>
+<section data-role="section" id="section-section2">
+  <div class="section-container">
+    <div class="solo-before text-hover">Tasky5 単独クリスマスライブ</div>
+    <div class="solo-title text-hover"> "A Capella Christmas 2017"</div>
+    <div class="solo-description text-hover">2017.12.22  18:30-Open 19:00-Start</div>
+    <div class="solo-description text-hover">Price ¥1,400 + 1D</div>
+    <div class="solo-description text-hover"><span>@四谷天窓</span>(高田馬場駅から徒歩約4分) <a target="_blank" href="https://goo.gl/maps/LPGcmcQX6DP2">GoogleMap</a></div>
+    <div class="yoyaku-btn horizon-next next-2 yoyakubtn1">ご予約はこちら</div>
+  </div>
+</section>
+<section data-role="section" id="section-section3">
+  <div class="section-container">
+    <%= form_tag('/yoyaku',:method => :post) do %>
+  <div class="yoyaku-form">
+    <div class="form-title">"A capella Christmas 2017" ご予約フォーム</div>
+    <div class="form-content">お名前</div>
+    <div class="form-input"><input type="text" name="name"></div>
+    <div class="form-content">Emailアドレス</div>
+    <div class="form-input"><input type="email" name="email"></div>
+    <div class="form-content">Emailアドレス(再入力)</div>
+    <div class="form-input"><input type="email" name="email2"></div>
+    <div class="form-content">所属</div>
+    <div class="form-input"><select name="alignment">
+      <option value="scs">SCS所属</option>
+      <option value="nonscs">他大アカペラサークル所属</option>
+      <option value="other">その他</option>
+    </select></div>
+    <div class="form-content">ご予約の人数</div>
+    <div class="form-input"><select name="amount">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select></div>
+    <div class="yoyaku-caution">
+      ・お支払は当日・現金でお願いいたします。<br>
+      ・ご予約はお一人様4名までとさせていただいております。<br>
+      ・ご予約後のキャンセルは、お待ちのお客様にお越しいただけない可能性がございますので、控えていただくようお願いいたします。<br>
+      ・万が一キャンセルされる場合は、お早めにお問い合わせください。<br>
+      ・ご予約内容をEmail経由でお送りします。Emailを正しく入力されていなかった場合、予約が完了しない場合があります。<br>
+      ・先行予約分が無くなり次第、抽選に移行いたします。抽選の結果は11月初旬にEmailにてお知らせいたします。
+    </div>
+
+    <input type="submit" name="" value="予約する" class="yoyaku-btn yoyaku-btn2">
+  </div>
+  <% end %>
+  </div>
+</section>
+
+
+<script type="text/javascript">
+$(function () {
+  $('section').horizon();
+});
+</script>

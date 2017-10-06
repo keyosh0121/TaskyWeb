@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TaskyWeb</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script type="text/javascript" src="assets/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="assets/jquery.touchSwipe.js"></script>
+    <script type="text/javascript" src="assets/jquery.horizonScroll.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>
